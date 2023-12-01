@@ -1,0 +1,391 @@
+/* || ESTILOS GENERALES */
+
+body {
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+    background-color: whitesmoke;
+    font-family: Arial, Verdana, sans-serif;
+    color: darkslategrey;
+}
+
+/* Formato aplicado al encabezado de la página */
+header {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 6%;
+    padding: 1% 2% 1% 2%;
+    background-color: darkslategrey;  
+}
+
+/* Formato aplicado al pie de página */
+footer {    
+    padding: 0.1%;
+    background-color: darkslategrey;
+    color: gainsboro;
+}
+
+/* Formato aplicado a la zona de navegación */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0% 4% 0% 0%; 
+}
+
+main {
+    padding: 5% 0% 0% 0%;
+}
+
+article {
+    padding: 1.5% 5% 1% 5%;
+    margin: 0.75%;   
+    background-color: gainsboro;
+}
+
+p {
+    color: darkslategrey;
+    font-size: 95%;
+    line-height: 180%;
+    text-align: left;
+}
+
+h1 {
+    color: gainsboro;
+    font-size: 125%;
+    letter-spacing: 6px;
+    text-align: left;
+    margin: 0%;
+    padding: 1% 2% 1% 2%;
+}
+
+h2 {
+    color: gainsboro;
+    font-size: 115%;
+    letter-spacing: 6px;
+    text-align: center;
+    line-height: 150%;
+    padding: 30% 15% 10% 15%;  
+}
+
+h3 {
+    color: darkslategrey;
+    font-size: 105%;
+    letter-spacing: 1px;
+    text-align: left;
+    line-height: 150%;
+}
+
+h4 {
+    color: gainsboro;
+    font-size: 90%;
+    letter-spacing: 6px;
+    text-align: center;
+    line-height: 20%;
+    padding: 0% 15% 0% 15%;   
+}
+
+h5 {
+    color: gainsboro;
+    font-size: 70%;
+    letter-spacing: 3px;
+    text-align: center;
+    text-indent: 20px;
+}
+
+/* Formato para enlaces no visitados */
+a:link {
+    color: gainsboro;
+    text-decoration: none;
+}
+
+/* Formato para enlaces visitados */
+a:visited {
+    color: gainsboro;
+}
+
+/* Formato para enlaces al pasar el ratón */
+a:hover {
+    color: whitesmoke;
+}
+
+
+/* || CLASES */
+
+/* Clase para aplicar posicionamiento flexbox con orientación horizontal (fila) */
+.contenedor-fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2.5% 7.5% 2.5% 7.5%;
+    padding: 0%;
+}
+
+/* Clase para aplicar posicionamiento flexbox con orientación vertical (columna) */
+.contenedor-columna {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5% 12.5% 2.5% 12.5%;
+    padding: 0%;
+}
+
+/* Formato aplicado a las cajas de tipo título en contenedores flexbox */
+.item-texto {
+    flex-basis: 250px;
+    height: 250px;
+    background-color: darkslategrey;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+    color: gainsboro;
+}
+
+/* Formato aplicado a las cajas de tipo título estático en contenedores flexbox */
+.item-texto-estatico {
+    flex-basis: 250px;
+    height: 250px;
+    background-color: darkslategrey;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+    color: gainsboro;
+}
+
+/* Formato aplicado a las cajas de tipo título en contenedores flexbox al pasar con el ratón */
+.item-texto:hover {
+    flex-basis: 250px;
+    height: 250px;
+    background-color: rgba(47,79,79, 0.85);
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+}
+
+.item-texto:hover h2 {
+    color: whitesmoke;
+}
+
+.item-texto:hover h4 {
+    color: whitesmoke;
+}
+
+/* Formato aplicado a los artículos de tipo descripción de ruta */
+.descripcion {
+    flex-basis: 807px;
+    height: 250px;
+    background-color: gainsboro;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+    color: gainsboro;
+}
+
+.descripcion p {
+    margin: 2% 5% 0% 5%;
+    padding: 0%;
+    line-height: 200%;
+}
+
+/* Imagen de fondo en la página de inicio */
+.imagen-fondo {
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Clase utilizada para fijar la posición del pie de página */
+.footer-fixed {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+/* Clase para aplicar negrita */
+.negrita {
+    font-weight: bold;
+}
+
+/* Formato aplicado a enlaces a webs externas */
+.enlace-exterior {
+    position: relative;
+    right: -90%;
+    font-size: 80%;
+    font-weight: bold;
+    color: darkslategrey;
+}
+
+/* Formato aplicado a enlaces a webs externas al pasar con el ratón */
+.enlace-exterior:hover {
+    font-size: 90%;
+}
+
+/* Formato aplicado a fuentes de referencia */
+.fuentes {
+    color: darkslategrey;
+    font-size: 75%;
+    line-height: 100%;
+    text-align: left;
+}
+
+/* Artículo con posición absoluta en página de inicio */
+.article-absolute {
+    position: absolute;
+    top: 15%;
+    bottom: 12%;
+    left: 2%;
+    width: 25%;
+    padding: 1% 2% 2% 2%;
+    background: rgba(220, 220, 220, 0.65);
+}
+
+#logo {
+    position: relative;
+    left: -35%;
+}
+
+
+/* || FORMULARIO */
+
+form {
+    text-align: center;
+    margin-top: 10%;
+    border: none;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+/* Formato aplicado a las etiquetas del formulario */
+label {
+    width: 15%;
+    text-align: center;
+    letter-spacing: 4px;
+    background-color: darkslategrey;
+    color: gainsboro;
+    font-weight: bold;
+    padding: 1%;
+    margin: 0.5%;
+    border: none;
+}
+
+/* Formato aplicado a los campos de texto del formulario */
+input,
+textarea {
+ width: 40%;
+ background-color: gainsboro;
+ color: darkslategrey;
+ font: 90% Arial;
+ padding: 1%;
+ margin: 0.5%;
+ border: none;
+}
+
+/* Formato aplicado al botón del formulario */
+button {
+    position: relative;
+    left: 22.5%;
+    padding: 1%;
+    margin: 1% 0% 0% 0%;
+    width: 15%;
+    background-color: darkslategrey;
+    border: none;
+    color: gainsboro;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: 100% Arial;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+/* Formato aplicado al botón al pasar con el ratón */
+button:hover {
+    background-color: #597272
+}
+
+/* Formato aplicado al botón al clicar sobre él */
+button:active {
+  background-color: darkslategrey;
+  transform: scale(1.15);
+}
+
+/* Desactivar el formato por defecto del navegador al clicar en los campos del formulario */
+*:focus {
+    outline: none;
+}
+
+/* Formato aplicado a los campos de texto del formulario al clicar sobre ellos */
+input:focus {
+    border: 3px solid darkslategrey;
+}
+
+/* Formato aplicado al área de texto del formulario al clicar sobre ella */
+textarea:focus {
+    border: 3px solid darkslategrey;
+}
+
+
+/* || MENÚ DESPLEGABLE */
+
+.desplegable {
+    position: relative;
+    display: inline-block;
+    margin: 0%;
+    padding: 1% 2% 1% 2%;
+}
+
+/* Formato aplicado al contenido del menú desplegable */
+.desplegable-contenido {
+    display: none;
+    position: absolute;
+    background-color: rgba(47,79,79, 0.95);
+    margin: 0%;
+    min-width: 180%;
+    z-index: 1;
+    color: gainsboro;
+    font-size: 95%;
+    letter-spacing: 2px;
+}
+
+/* Formato aplicado a los enlaces del menú desplegable */
+.desplegable-contenido a {
+    line-height: 180%;
+    padding: 10% 10% 5% 10%;
+    margin: 0%;
+    display: block;
+    border-bottom: 1px solid gainsboro;
+}
+
+/* Formato aplicado a los elementos <p> del menú desplegable */
+.desplegable-contenido p {
+    color: gainsboro;
+    padding: 5% 10% 5% 10%;
+    margin: 0%;
+    display: block;
+    border-bottom: 1px solid gainsboro;
+}
+
+/* Formato aplicado a los enlaces del menú desplegable al pasar con el ratón */
+.desplegable-contenido a:hover {
+    color: whitesmoke;
+    font-weight:bolder;
+}
+
+/* Formato aplicado a los elementos <p> del menú desplegable al pasar con el ratón */
+.desplegable-contenido p:hover {
+    color: whitesmoke;
+    font-weight:bolder;
+}
+
+.desplegable:hover .desplegable-contenido {
+    display: block;
+}
+
+
+
+

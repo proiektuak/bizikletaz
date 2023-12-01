@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Cabecera -->
+        <meta charset="utf-8">
+        <meta name="description" content="Formulario de contacto">
+        <meta name="keywords" content="cicloturismo, rutas bicicleta">
+        <title>BIZIKLETAZ - CONTACTO</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+
+    <body>
+        <!-- Encabezado -->
+        <header>
+            <!-- Enlaces a las páginas de primer nivel del sitio web -->
+            <nav>
+                <h1 id="logo"><a href="index.html">BIZIKLETAZ</a></h1>
+
+                <!-- Menú desplegable -->
+                <div class="desplegable">
+                    <h1><a href="rutas.html">rutas</a></h1>
+                    <div class="desplegable-contenido">
+                        <a href="ruta1.html">Canal du Midi</a>
+                        <p>Val de Loire</p>
+                        <p>Canal de Garonne</p>
+                        <p>Canal de Castilla</p>
+                    </div>
+                </div>
+
+                <h1>|</h1>
+                <h1><a href="noticias.html">noticias</a></h1>
+                <h1>|</h1>
+                <h1><a href="contacto.html">contacto</a></h1>
+            </nav>
+        </header>
+
+        <!-- Formulario de contacto -->
+        <form action="mailto:jungomez@birt.eus" method="post">
+
+                <div class="formulario">
+                    <label for="nombre">nombre</label>
+                    <input type="text" id="nombre" name="nombre" />
+                </div>
+                <div class="formulario">
+                    <label for="email">e-mail</label>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+                <div class="formulario">
+                    <label for="mensaje">mensaje</label>
+                    <textarea id="mensaje" name="mensaje" maxlength="800" rows="7" placeholder="800 caracteres máx." required></textarea>
+                </div>
+
+                <button type="submit">enviar</button>
+            </form>
+ 
+        <!-- Pie de página con posición fija -->
+        <footer class="footer-fixed">
+            <h5>Página web realizada por June Gómez Alonso con fines educativos · Copyright de las imágenes: June Gómez Alonso</h5>
+        </footer>
+    </body>
+</html>
